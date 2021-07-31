@@ -1,5 +1,3 @@
-<Category>JS</Category>
-  <Block>execute</Block>
-    <Color>#32a852<Color>
-    <Name>Javascript</Name>
-<Category>JS</Category>
+<Category id="JS">
+  <Block color="#55eb34" id="execute">Javascript</Block>
+</Category>
