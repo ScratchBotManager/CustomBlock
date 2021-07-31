@@ -11,6 +11,7 @@ const toolboxdata = '{"toolbox": [
     }
   ]}';
 
-alert(toolboxdata.JS.execute.[1]["Name"]);
+  var toolbox = JSON.parse(toolboxdata);
+alert(toolbox.JS.execute.[1]["Name"]);
 
 </script>
