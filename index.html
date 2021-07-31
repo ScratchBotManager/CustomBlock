@@ -1,5 +1,23 @@
-<xml id="toolbox" version="1.0" xmlns="https://www.w3.org/2000/svg">
-  <Category Name="JS">
-  <Block color="#55eb34" id="execute">Javascript</Block>
-</Category>
-</xml>
+<script>
+function getJSONP(url, success) {
+
+    var ud = '_' + +new Date,
+        script = document.createElement('script'),
+        head = document.getElementsByTagName('head')[0] 
+               || document.documentElement;
+
+    window[ud] = function(data) {
+        head.removeChild(script);
+        success && success(data);
+    };
+
+    script.src = url.replace('callback=?', 'callback=' + ud);
+    head.appendChild(script);
+
+}
+
+getJSONP('Toolbox.json', function(data){
+const toolbox = JSON.Parse
+alert(toolbox.JS.execute.Name)
+});  
+</script>
