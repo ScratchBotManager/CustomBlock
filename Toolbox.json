@@ -1,9 +1,10 @@
 {"toolbox": [ 
-  { "JS": [
-    {
-    "id":"execute", 
+  { "JS": [{
+  "execute": {
     "color":"#03fc0f", 
     "Name":"Javascript"
+    
+    }
     }
     ]
     }
