@@ -1,23 +1,17 @@
 <script>
-function getJSONP(url, success) {
+const toolboxdata = '{"toolbox": [ 
+  { "JS": [{
+  "execute": {
+    "color":"#03fc0f", 
+    "Name":"Javascript"
+    
+    }
+    }
+    ]
+    }
+  ]}';
 
-    var ud = '_' + +new Date,
-        script = document.createElement('script'),
-        head = document.getElementsByTagName('head')[0] 
-               || document.documentElement;
-
-    window[ud] = function(data) {
-        head.removeChild(script);
-        success && success(data);
-    };
-
-    script.src = url.replace('callback=?', 'callback=' + ud);
-    head.appendChild(script);
-
-}
-
-getJSONP('Toolbox.json', function(data){
-const toolbox = JSON.Parse
+const toolbox = JSON.Parse(toolboxdata)
 alert(toolbox.JS.execute.Name)
-});  
+
 </script>
