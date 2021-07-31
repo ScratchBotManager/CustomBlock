@@ -1,8 +1,5 @@
-<node>JS</node>
- <node>execute</node>
-    <node>Color</node>
-      <node>#32a852</node>
-    <node>Name
-      <node>Javascript</node>
- <node>execute</node>
-<node>JS</node>
+<Category>JS</Category>
+ <Block>execute</Block>
+    <Color>#32a852<Color>
+    <Name>Javascript</Name>
+<Category>JS</Category>
