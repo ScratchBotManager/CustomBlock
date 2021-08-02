@@ -1,9 +1,9 @@
 <div id="P">text</div>
 <script>
-var toolboxdata = '{"toolbox":[{"JS":[{"execute":{"color":"#03fc0f","Name":"Javascript"}}]}]}';
+let toolboxdata = '{"JS":[{"execute":{"color":"#03fc0f","Name":"Javascript"}}]}';
 
   var toolbox = JSON.parse(toolboxdata);
 const p = document.getElementById("P")
-p.innerText = JSON.stringify(toolbox.toolbox);
+p.innerText = toolbox.JS.execute.Name;
 
 </script>
