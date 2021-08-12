@@ -1,4 +1,4 @@
-<button id="Test">text</button>
+<button onclick="executeclicked(input.value);" id="Test">text</button>
 <input id="INPUT" type="text" value="Hello World"></input>
 <script>
 let toolboxdata = '{"JS":[{"execute":{"color":"#03fc0f","id":"execute","Name":"Alert", "values": [{"id": "jsinput", "type": "input"}]}}]}'
@@ -11,6 +11,5 @@ var input = document.getElementById("INPUT");
 function executeclicked(Value) {
 alert(Value);
 }
-Test.onclick = executeclicked(input.value);
 
 </script>
