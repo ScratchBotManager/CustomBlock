@@ -3,7 +3,7 @@
 let toolboxdata = '{"JS":[{"execute":{"color":"#03fc0f","Name":"Javascript"}}]}'
 
   var toolbox = JSON.parse(toolboxdata);
-const Test = document.getElementById("Test")
+const Test = document.getElementById("Test");
 Test.innerText = toolbox.JS[0].execute.Name;
   Test.style.color = toolbox.JS[0].execute.color;
 
