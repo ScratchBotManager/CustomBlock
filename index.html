@@ -1,4 +1,5 @@
 <button id="Test">text</button>
+<input id="INPUT"></input>
 <script>
 let toolboxdata = '{"JS":[{"execute":{"color":"#03fc0f","id":"execute","Name":"Javascript", "values": [{"id": "jsinput", "type": "input"}]}}]}'
 
@@ -7,7 +8,7 @@ const Test = document.getElementById("Test");
 Test.innerText = toolbox.JS[0].execute.Name;
   Test.style.color = toolbox.JS[0].execute.color;
   alert(toolbox.JS[0].execute.id);
-var input = document.createElement("INPUT");
+var input = document.getElementById("INPUT");
 Test.onclick = input.innerHTML;
 
 </script>
