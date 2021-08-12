@@ -6,9 +6,9 @@ let toolboxdata = '{"JS":[{"execute":{"color":"#03fc0f","id":"execute","Name":"J
   var toolbox = JSON.parse(toolboxdata);
 const Test = document.getElementById("Test");
 Test.innerText = toolbox.JS[0].execute.Name;
-  Test.style.color = toolbox.JS[0].execute.color;
+  Test.style.background-color = toolbox.JS[0].execute.color;
   alert(toolbox.JS[0].execute.id);
 var input = document.getElementById("INPUT");
-Test.onclick = input.innerHTML;
+Test.onclick = input.value;
 
 </script>
