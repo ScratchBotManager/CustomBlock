@@ -1,11 +1,13 @@
 <button id="Test">text</button>
 <script>
-let toolboxdata = '{"JS":[{"execute":{"color":"#03fc0f","id":"execute","Name":"Javascript"}}]}'
+let toolboxdata = '{"JS":[{"execute":{"color":"#03fc0f","id":"execute","Name":"Javascript", "values": [{"id": "jsinput", "type": "input"}]}}]}'
 
   var toolbox = JSON.parse(toolboxdata);
 const Test = document.getElementById("Test");
 Test.innerText = toolbox.JS[0].execute.Name;
   Test.style.color = toolbox.JS[0].execute.color;
   alert(toolbox.JS[0].execute.id);
+var input = document.createElement("INPUT");
+Test.onclick = input.innerHTML;
 
 </script>
