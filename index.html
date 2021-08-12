@@ -8,6 +8,9 @@ const Test = document.getElementById("Test");
 Test.innerText = toolbox.JS[0].execute.Name;
 Test.style.backgroundColor = toolbox.JS[0].execute.color;
 var input = document.getElementById("INPUT");
-Test.onclick = return alert(input.value);
+function executeclicked(Value) {
+alert(Value);
+}
+Test.onclick = executeclicked(input.value);
 
 </script>
